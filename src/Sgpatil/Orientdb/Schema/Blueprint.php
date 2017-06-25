@@ -732,11 +732,11 @@ class Blueprint {
 
         return $attributes;
 
-        $attributes = array_merge(compact('propertyType', 'name'), $parameters);
-
-        $this->columns[] = $column = new Fluent($attributes);
-
-        return $column;
+//        $attributes = array_merge(compact('propertyType', 'name'), $parameters);
+//
+//        $this->columns[] = $column = new Fluent($attributes);
+//
+//        return $column;
     }
 
     /**

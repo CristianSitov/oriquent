@@ -70,7 +70,8 @@ abstract class Model extends IlluminateModel {
 	protected function newBaseQueryBuilder()
 	{
 		$conn = $this->getConnection();
-                                        $grammar = $conn->getQueryGrammar();
+        $grammar = $conn->getQueryGrammar();
+
 		return new QueryBuilder($conn, $grammar);
 	}
 
