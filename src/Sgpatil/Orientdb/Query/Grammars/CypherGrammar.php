@@ -112,6 +112,10 @@ class CypherGrammar extends Grammar
      */
     protected function compileFrom(Builder $query, $table)
     {
+        if (is_array($table)) {
+            $table = $table[0];
+        }
+
         return 'from ' . $this->wrapTable($table);
     }
 

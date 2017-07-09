@@ -510,6 +510,7 @@ abstract class Model extends IlluminateModel {
      */
     public function save(array $options = [])
     {
+        $this->setConnection('orientdb');
 
         $query = $this->newQueryWithoutScopes();
 
